@@ -1,0 +1,12 @@
+.footerBody {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1d1d1d;
+
+  .footerSplit {
+    display: flex;
+    gap: 1rem;
+  }
+}
