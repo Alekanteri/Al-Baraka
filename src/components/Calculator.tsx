@@ -32,10 +32,24 @@ const Calculator = () => {
     return Math.floor(mp + fp);
   };
 
+  const [checked, setChecked] = useState(false);
+
+  const handleChecked = (e: any) => {
+    setChecked(e.target.checked);
+  };
+
   return (
     <>
       <div className="calculatorBody">
         <form onChange={resultCalc}>
+          <div className="swithcer">
+            <p style={{ color: checked ? "#ffffff" : "#16a34a" }}>Идеал</p>
+            <label className="switch" onClick={handleChecked}>
+              <input type="checkbox" />
+              <span className="slider round"></span>
+            </label>
+            <p style={{ color: !checked ? "#ffffff" : "#16a34a" }}>Стандарт</p>
+          </div>
           <label>Стоимость товара: {count}</label>
           <input type="range" min={8} max={200} onChange={counterAddition} />
           <br />
