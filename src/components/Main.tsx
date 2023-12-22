@@ -3,6 +3,9 @@ import "../sass/components/main.scss";
 import { PiSealCheck } from "react-icons/pi";
 
 const Main: React.FC = () => {
+  const [state, setState] = React.useState(false);
+
+  console.log(state);
   return (
     <div className="main">
       <div className="main-container">

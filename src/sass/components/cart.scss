@@ -13,21 +13,26 @@ code {
 }
 
 .card-container {
-  margin: 3rem 0;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
+  margin-top: 3rem;
+  
+  
 
 }
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 240px);
-  grid-gap: 32px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   position: relative;
+  gap: 50px;
   z-index: 1;
+  
 }
 
 .card {
-  
+  width: 290px;
   background-color: var(--background-color);
   box-shadow: 0px var(--card-box-shadow-1-y) var(--card-box-shadow-1-blur)
       var(--card-box-shadow-1),

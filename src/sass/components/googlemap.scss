@@ -5,11 +5,11 @@
   
   .container {
     // width: 1200px !important;
-
-
+    width: fit-content;
+    margin: auto;
     @apply absolute right-0 left-0 top-20;
     @media screen and (min-width: 992px) and (max-width: 1439px) {
-      max-width: 1279px !important;
+
       padding: 0 !important;
       margin: 0 80px !important;
       width: auto !important;
@@ -47,12 +47,13 @@
   }
   
   .container-card {
+    
     position: relative;
     border: 2px solid transparent;
     background: linear-gradient(71deg, #080509, #134534, #1c1f1e);
     background-clip: padding-box;
     border-radius: 45px;
-    padding: 40px;
+    padding: 40px 100px;
     img {
       margin-bottom: 32px;
     }
@@ -112,6 +113,7 @@
     color: hsla(0, 0%, 100%, 0.5);
     font-size: 16px;
     max-width: 470px;
+    text-align: center
   }
   
   .card-phone {
@@ -121,3 +123,8 @@
       font-family: "Playfair Display", serif;
     }
   }
+.contacts__item-val {
+  text-align: center;
+  align-items: center;
+}
+  

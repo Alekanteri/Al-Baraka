@@ -1,27 +1,33 @@
 import React from "react";
-import Cart from "./components/Card";
+import Card from "./components/Card";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import GoogleMap from "./components/GoogleMap";
-import Carousel from "./components/Carousel";
-import Reviews from "./components/Reviews";
+import Popular from "./components/Popular";
+import SplineApp from "./components/Spline";
 import Calculator from "./components/Calculator";
+import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
+import Features from "./components/Features";
 
 const App: React.FC = () => {
   return (
     <>
       <div className="app-container">
         <Header />
-        <Main />
+        <div className="flex justify-between">
+          <Main />
+          <div className="mt-[1.5rem]">
+            <SplineApp />
+          </div>
+        </div>
+        <Card />
+        <Popular />
         <Calculator />
-        <Cart />
-        <Carousel />
+        <Reviews />
+        {/* <Features /> */}
       </div>
       <GoogleMap />
-      <div className="app-container">
-        <Reviews />
-      </div>
       <Footer />
     </>
   );

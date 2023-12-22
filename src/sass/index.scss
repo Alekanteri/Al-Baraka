@@ -1,8 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 body {
+  background-image: url('https://www.al-baraka.ru/assets/img/bg.svg');
+  background-repeat: no-repeat;
+  // background-position: 100%;
+  background-size: 10%;
+
   scroll-behavior: auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -93,6 +97,7 @@ body {
   &.toggle .grid * {
     transition-duration: 0s !important;
   }
+  
 }
 
 .app-container {
@@ -107,11 +112,11 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #2eac7f;
+  background-color: #2EAC7F;
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
   border-radius: 10px;
   background-color: #f9f9fd;
 }

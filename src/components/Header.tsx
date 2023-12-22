@@ -11,15 +11,26 @@ const Header: React.FC = () => {
       <div className="header--container">
         <div className="header-left-container">
           <img width={180} height={180} src={logo} alt="logo" />
-          <span>
+          <span className="text-[12px]">
             Работаем более 8 лет и нам доверяют <br /> более 40 000 довольных
             клиентов
           </span>
         </div>
         <div className="header-center-container">
-          <FaWhatsapp size={20} />
-          <FaTelegramPlane size={20} />
-          <SlSocialVkontakte size={20} />
+          <a
+            target="_blank"
+            href="https://wa.me/79380073777?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BF%D1%80%D0%BE%20%D1%80%D0%B0%D1%81%D1%81%D1%80%D0%BE%D1%87%D0%BA%D1%83!"
+          >
+            {" "}
+            <FaWhatsapp size={20} />
+          </a>
+          <a target="_blank" href="https://t.me/al_baraka_ing">
+            <FaTelegramPlane size={20} />
+          </a>
+          <a target="_blank" href="https://vk.com/al.baraka">
+            {" "}
+            <SlSocialVkontakte size={20} />
+          </a>
         </div>
         <div className="header-right-container">
           <div className="header-phone">
